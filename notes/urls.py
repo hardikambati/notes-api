@@ -1,6 +1,8 @@
 from django.urls import path
 from . import views
 
+# uses Viewset Architecture
+
 get_single_view = views.NoteView.as_view({
     'get': 'get_single'
 })
